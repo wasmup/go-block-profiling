@@ -1,0 +1,31 @@
+File: main
+Type: cpu
+Time: Apr 24, 2021 at 1:10am (MST)
+Duration: 6.24s, Total samples = 6.32s (101.34%)
+Showing nodes accounting for 6.20s, 98.10% of 6.32s total
+Dropped 40 nodes (cum <= 0.03s)
+      flat  flat%   sum%        cum   cum%
+     5.68s 89.87% 89.87%      5.68s 89.87%  runtime.memmove
+     0.12s  1.90% 91.77%      6.22s 98.42%  main.(*my).shuffle
+     0.12s  1.90% 93.67%      0.19s  3.01%  math/rand.(*Rand).Int31n
+     0.07s  1.11% 94.78%      0.07s  1.11%  math/rand.seedrand (inline)
+     0.07s  1.11% 95.89%      5.77s 91.30%  runtime.typedslicecopy
+     0.04s  0.63% 96.52%      0.04s  0.63%  math/rand.(*rngSource).Uint64 (inline)
+     0.04s  0.63% 97.15%      0.04s  0.63%  runtime.futex
+     0.03s  0.47% 97.63%      0.07s  1.11%  math/rand.(*rngSource).Int63
+     0.02s  0.32% 97.94%      0.21s  3.32%  math/rand.(*Rand).Intn
+     0.01s  0.16% 98.10%      0.08s  1.27%  math/rand.(*rngSource).Seed
+         0     0% 98.10%      6.22s 98.42%  main.main
+         0     0% 98.10%      0.07s  1.11%  math/rand.(*Rand).Int31 (inline)
+         0     0% 98.10%      0.07s  1.11%  math/rand.(*Rand).Int63 (inline)
+         0     0% 98.10%      0.10s  1.58%  math/rand.NewSource (inline)
+         0     0% 98.10%      0.04s  0.63%  runtime.findrunnable
+         0     0% 98.10%      0.04s  0.63%  runtime.gcBgMarkWorker
+         0     0% 98.10%      0.04s  0.63%  runtime.gcBgMarkWorker.func2
+         0     0% 98.10%      0.04s  0.63%  runtime.gcDrain
+         0     0% 98.10%      6.22s 98.42%  runtime.main
+         0     0% 98.10%      0.04s  0.63%  runtime.mallocgc
+         0     0% 98.10%      0.05s  0.79%  runtime.mcall
+         0     0% 98.10%      0.05s  0.79%  runtime.park_m
+         0     0% 98.10%      0.05s  0.79%  runtime.schedule
+         0     0% 98.10%      0.07s  1.11%  runtime.systemstack

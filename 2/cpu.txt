@@ -1,0 +1,40 @@
+File: main
+Type: cpu
+Time: Apr 24, 2021 at 1:18am (MST)
+Duration: 402.88ms, Total samples = 260ms (64.54%)
+Showing nodes accounting for 260ms, 100% of 260ms total
+      flat  flat%   sum%        cum   cum%
+      70ms 26.92% 26.92%       70ms 26.92%  main.shuffle.func1
+      50ms 19.23% 46.15%      100ms 38.46%  math/rand.(*Rand).int31n
+      30ms 11.54% 57.69%      200ms 76.92%  math/rand.(*Rand).Shuffle
+      30ms 11.54% 69.23%       30ms 11.54%  math/rand.seedrand (inline)
+      20ms  7.69% 76.92%       40ms 15.38%  math/rand.(*rngSource).Int63
+      20ms  7.69% 84.62%       20ms  7.69%  math/rand.(*rngSource).Uint64 (inline)
+      10ms  3.85% 88.46%       50ms 19.23%  math/rand.(*Rand).Int63 (inline)
+      10ms  3.85% 92.31%       40ms 15.38%  math/rand.(*rngSource).Seed
+      10ms  3.85% 96.15%       10ms  3.85%  runtime.futex
+      10ms  3.85%   100%       10ms  3.85%  runtime.lock2
+         0     0%   100%      240ms 92.31%  main.main
+         0     0%   100%      240ms 92.31%  main.shuffle
+         0     0%   100%       50ms 19.23%  math/rand.(*Rand).Uint32 (inline)
+         0     0%   100%       40ms 15.38%  math/rand.NewSource (inline)
+         0     0%   100%       10ms  3.85%  runtime.(*mheap).freeSpan
+         0     0%   100%       10ms  3.85%  runtime.(*mheap).freeSpan.func1
+         0     0%   100%       10ms  3.85%  runtime.(*mspan).sweep
+         0     0%   100%       10ms  3.85%  runtime.bgsweep
+         0     0%   100%       10ms  3.85%  runtime.futexwakeup
+         0     0%   100%       10ms  3.85%  runtime.gcBgMarkWorker
+         0     0%   100%       10ms  3.85%  runtime.gcBgMarkWorker.func2
+         0     0%   100%       10ms  3.85%  runtime.gcDrain
+         0     0%   100%       10ms  3.85%  runtime.lock (inline)
+         0     0%   100%       10ms  3.85%  runtime.lockWithRank (inline)
+         0     0%   100%      240ms 92.31%  runtime.main
+         0     0%   100%       10ms  3.85%  runtime.markroot
+         0     0%   100%       10ms  3.85%  runtime.markroot.func1
+         0     0%   100%       10ms  3.85%  runtime.notewakeup
+         0     0%   100%       10ms  3.85%  runtime.ready
+         0     0%   100%       10ms  3.85%  runtime.resumeG
+         0     0%   100%       10ms  3.85%  runtime.startm
+         0     0%   100%       10ms  3.85%  runtime.sweepone
+         0     0%   100%       20ms  7.69%  runtime.systemstack
+         0     0%   100%       10ms  3.85%  runtime.wakep

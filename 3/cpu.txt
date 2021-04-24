@@ -1,0 +1,19 @@
+File: main
+Type: cpu
+Time: Apr 24, 2021 at 1:13am (MST)
+Duration: 401.84ms, Total samples = 260ms (64.70%)
+Showing nodes accounting for 260ms, 100% of 260ms total
+      flat  flat%   sum%        cum   cum%
+     120ms 46.15% 46.15%      190ms 73.08%  math/rand.(*lockedSource).Int63
+      60ms 23.08% 69.23%       60ms 23.08%  sync.(*Mutex).Unlock (inline)
+      40ms 15.38% 84.62%       40ms 15.38%  main.shuffle.func1
+      20ms  7.69% 92.31%      260ms   100%  math/rand.(*Rand).Shuffle
+      10ms  3.85% 96.15%      200ms 76.92%  math/rand.(*Rand).int31n
+      10ms  3.85%   100%       10ms  3.85%  math/rand.(*rngSource).Uint64 (inline)
+         0     0%   100%      260ms   100%  main.main
+         0     0%   100%      260ms   100%  main.shuffle
+         0     0%   100%      190ms 73.08%  math/rand.(*Rand).Int63 (inline)
+         0     0%   100%      190ms 73.08%  math/rand.(*Rand).Uint32 (inline)
+         0     0%   100%       10ms  3.85%  math/rand.(*rngSource).Int63 (inline)
+         0     0%   100%      260ms   100%  math/rand.Shuffle (inline)
+         0     0%   100%      260ms   100%  runtime.main
